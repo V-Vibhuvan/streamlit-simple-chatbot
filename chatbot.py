@@ -24,6 +24,7 @@ for message in st.session_state.chat_history:
 # Initialize Ollama LLM
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
+    groq_api_key = st.secrets["GROQ_API_KEY"],
     temperature=0.0
 )
 
@@ -49,3 +50,4 @@ if user_prompt:
 
     with st.chat_message("assistant"):
         st.markdown(assistant_response)
+
