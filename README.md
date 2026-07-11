@@ -183,8 +183,4 @@ The project depends on the following Python libraries:
 * python-dotenv
 * langchain-community
 * langchain-groq
-
----
-
-[Insert license information]
 ```
